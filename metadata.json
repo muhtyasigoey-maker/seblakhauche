@@ -1,0 +1,6 @@
+{
+  "name": "Seblak Hauche",
+  "description": "A comprehensive self-service (prasmanan) Seblak ordering and management platform with a customer ordering flow, shopping cart, interactive checkout, and real-time admin inventory and kitchen dashboard.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

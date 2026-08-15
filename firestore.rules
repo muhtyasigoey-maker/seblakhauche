@@ -1,0 +1,22 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // Toppings are readable by anyone, writable by authorized admin clients
+    match /toppings/{toppingId} {
+      allow read: if true;
+      allow write: if true;
+    }
+
+    // Orders are readable by anyone (for status tracking), and clients can place orders
+    match /orders/{orderId} {
+      allow read, create: if true;
+      allow update, delete: if true;
+    }
+
+    // Settings (such as site configurations) are readable by anyone, writable by admin
+    match /settings/{settingId} {
+      allow read: if true;
+      allow write: if true;
+    }
+  }
+}

@@ -1,0 +1,59 @@
+@import "tailwindcss";
+
+@theme {
+  --font-anybody: "Bricolage Grotesque", sans-serif;
+  --font-plus: "Instrument Sans", sans-serif;
+  
+  --color-seblak-orange: #FF4D00;
+  --color-seblak-dark: #1E1E1E;
+  --color-seblak-yellow: #FFC700;
+  --color-seblak-red: #E63946;
+}
+
+body {
+  font-family: var(--font-plus);
+  background-color: #FAFAFA;
+  color: #1E1E1E;
+}
+
+/* Material Icons Integration */
+.material-symbols-outlined {
+  font-family: 'Material Symbols Outlined';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Scrollbar Customization */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #F3F4F6;
+}
+::-webkit-scrollbar-thumb {
+  background: #D1D5DB;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #9CA3AF;
+}
+
+/* Hide scrollbars for slick swiping on mobile */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
